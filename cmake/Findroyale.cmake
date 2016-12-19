@@ -14,6 +14,7 @@ if(ERROR_CODE EQUAL 0)
       NO_DEFAULT_PATH
     )
 
+    unset(CMAKE_CXX_FLAGS CACHE)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS_OLD}")
   endif()
 endif()
