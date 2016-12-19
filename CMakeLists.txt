@@ -56,6 +56,18 @@ generate_dynamic_reconfigure_options(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+  # INCLUDE_DIRS
+  LIBRARIES
+    pico_flexx_nodelet
+  CATKIN_DEPENDS
+    nodelet
+    roscpp
+    rostime
+    sensor_msgs
+    std_msgs
+    dynamic_reconfigure
+  DEPENDS
+    royale
 )
 
 ###########
